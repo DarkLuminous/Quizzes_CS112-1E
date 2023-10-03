@@ -14,16 +14,15 @@ def One():
  Two()
 
 def Two():
+ #How would you rewrite the expression if you wished the result to be an integer number? 
  print("25 / 4")
- Ans = 25/4                
- print("Float Form", Ans)
  
- input("Continue to Integer Form. . .")
- os.system('cls')
- 
- #The code "int()" translate the Float value inside the parenthesis into integer
- print("Integer Form", int(Ans))            
- 
+ #To obtain an integer result, i'll use the floor division operator //, which discards the decimal part of the division.
+ Ans = 25 // 4               
+ print("The Answer is:", (Ans))            
+
+
+
  input("Continue . . . ")
  os.system('cls')
  Three()
@@ -45,7 +44,7 @@ def Three():
  
  #print(P_1,"1st")
  
- P_a2 =_a + _b * _c              #2nd Polynomial
+ P_a2 = _a + _b * _c              #2nd Polynomial
  P_2 = 9 * P_a2
 
  #print(P_2,"2nd")
@@ -64,7 +63,7 @@ def Three():
  
  
  Ans = P_1 - P_2 + P_34
- print("The Answer is :",Ans)
+ print("The Answer is:",round(Ans,2))
 
  
 One()
